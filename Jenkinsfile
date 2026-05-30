@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Compile and build the project
-                sh 'mvn clean install'
+                bat 'mvn clean install'
             }
         }
 
         stage('Test') {
             steps {
                 // Run unit tests
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
     }
