@@ -38,7 +38,7 @@ public class BaseTest {
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("--disable-notifications");
 			option.addArguments("--headless");
-			//Adding here
+			//Adding here-check in
 			WebDriver driver=new ChromeDriver(option);
 			tdriver.set(driver);
 		}else if(browser.equalsIgnoreCase("firefox")) {
