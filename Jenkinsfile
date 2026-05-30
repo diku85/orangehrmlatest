@@ -21,12 +21,6 @@ pipeline {
                 // Run unit tests
                 sh 'mvn test'
             }
-            post {
-                always {
-                    // Publish test results to Jenkins
-                    junit 'target/surefire-reports/*.xml'
-                }
-            }
         }
     }
 }
